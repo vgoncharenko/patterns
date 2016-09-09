@@ -1,1 +1,19 @@
-Strategy
+<h1>Strategy:</h1>
+<br>
+Определяет семейство алгоритмов, инкапсулирует их и обеспечивает взаимозаменяемость.<br>
+<br>
+Отделяем изменяемые части от постоянных.<br>
+(Отделение функционала какого-то поведения в отдельную структуру на основе интерфейса)<br>
+<br>
+<b>Принцып:</b> <p style="color: red">Программируем на уровне интерфеисов, а не реализации.</p>
+<br>
+Постоянные мы можем наследовать, а изменяемое поведение делегируем другим классам, которые мы втягиваем в данный через композицию.<br>
+<br>
+отдаем предпочтение композиции нежели наследованию.<br>
+<br>
+This architecture let we use behavior (fly or cria) in another object types, because this behavior not closed by Duck classes.<br>
+Another one, we can add new kind of behavior without changes in a existing behavior classes and without affects to Duck-classes(how use existing behavior).<br>
+<p>
+    <h3>Related 'Contains' can be comfortable then 'Is'</h3>
+Related 'Contains' means that you use COMPOSITION(behavior doesn't extend, but delegate to another object.)
+</p>
