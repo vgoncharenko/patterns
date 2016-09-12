@@ -1,3 +1,13 @@
+observer:
+    resource: "@ObserverBundle/Controller/"
+    type:     annotation
+    prefix:   /observer
+
+simple_factory:
+    resource: "@SimpleFactoryBundle/Controller/"
+    type:     annotation
+    prefix:   /simple-factory
+
 strategy:
     resource: "@StrategyBundle/Controller/"
     type:     annotation

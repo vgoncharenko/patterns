@@ -6,8 +6,14 @@ use Symfony\Component\Debug\Debug;
 // If you don't want to setup permissions the proper way, just uncomment the following PHP line
 // read http://symfony.com/doc/current/book/installation.html#checking-symfony-application-configuration-and-setup
 // for more information
-//umask(0000);
-
+umask(0000);
+mb_internal_encoding('UTF-8');
+mb_http_output('UTF-8');
+mb_http_input('UTF-8');
+mb_language('uni');
+mb_regex_encoding('UTF-8');
+ob_start('mb_output_handler');
+date_default_timezone_set( 'Europe/Paris' );
 // This check prevents access to debug front controllers that are deployed by accident to production servers.
 // Feel free to remove this, extend it, or make something more sophisticated.
 if (isset($_SERVER['HTTP_CLIENT_IP'])
