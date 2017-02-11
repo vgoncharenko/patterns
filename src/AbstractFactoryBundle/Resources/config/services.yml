@@ -1,0 +1,4 @@
+services:
+#    abstract_factory.example:
+#        class: AbstractFactoryBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

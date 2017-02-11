@@ -7,7 +7,7 @@ interface ObserverInterface
     /**
      * Observer update.
      *
-     * @return void
+     * @param array $data
      */
-    public function update();
+    public function update(array $data);
 }

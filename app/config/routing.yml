@@ -1,7 +1,17 @@
+abstract_factory:
+    resource: "@AbstractFactoryBundle/Controller/"
+    type:     annotation
+    prefix:   /abstract-factory
+
 observer:
     resource: "@ObserverBundle/Controller/"
     type:     annotation
-    prefix:   /observer
+    prefix:   /observero
+
+factory_method:
+    resource: "@FactoryMethodBundle/Controller/"
+    type:     annotation
+    prefix:   /factory-method
 
 simple_factory:
     resource: "@SimpleFactoryBundle/Controller/"
